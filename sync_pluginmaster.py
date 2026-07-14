@@ -50,8 +50,11 @@ def manifest_entry(stable, testing, releases):
         "Punchline": "中文本地化的任务助手。",
         "Description": "Questionable 的中文本地化版本，帮助你自动完成支持的任务。",
         "InternalName": "Questionable",
-        "AssemblyVersion": stable["tag_name"].removeprefix("v"),
-        "TestingAssemblyVersion": testing["tag_name"].removeprefix("v"),
+        # Release tags may carry a human-facing build suffix that is not a
+        # valid Dalamud/.NET assembly version. Always publish the version
+        # produced by the plugin manifest instead.
+        "AssemblyVersion": stable_manifest["AssemblyVersion"],
+        "TestingAssemblyVersion": testing_manifest["AssemblyVersion"],
         "DalamudApiLevel": stable_manifest["DalamudApiLevel"],
         "TestingDalamudApiLevel": testing_manifest["DalamudApiLevel"],
         "DownloadLinkInstall": release_asset(stable, "latest.zip"),
