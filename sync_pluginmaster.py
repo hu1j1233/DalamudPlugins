@@ -5,6 +5,7 @@ from urllib.request import Request, urlopen
 
 
 REPOSITORY = "hu1j1233/Questionable"
+UPSTREAM_REPOSITORY = "PunishXIV/Questionable"
 PLUGINMASTER = "pluginmaster.json"
 
 
@@ -35,9 +36,15 @@ def release_asset(release, name):
     return asset["browser_download_url"]
 
 
+def upstream_version():
+    release = get_json(f"https://api.github.com/repos/{UPSTREAM_REPOSITORY}/releases/latest")
+    return release["tag_name"]
+
+
 def manifest_entry(stable, testing, releases):
     stable_manifest = get_json(release_asset(stable, "Questionable.json"))
     testing_manifest = get_json(release_asset(testing, "Questionable.json"))
+    source_version = upstream_version()
     download_count = sum(
         asset["download_count"]
         for release in releases
@@ -48,7 +55,7 @@ def manifest_entry(stable, testing, releases):
         "Author": "hu1j1233",
         "Name": "Questionable",
         "Punchline": "中文本地化的任务助手。",
-        "Description": "Questionable 的中文本地化版本，帮助你自动完成支持的任务。",
+        "Description": f"Questionable 的中文本地化版本，基于上游 Questionable {source_version}，帮助你自动完成支持的任务。",
         "InternalName": "Questionable",
         # Release tags may carry a human-facing build suffix that is not a
         # valid Dalamud/.NET assembly version. Always publish the version
