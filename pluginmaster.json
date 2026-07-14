@@ -22,6 +22,8 @@
     "ApplicableVersion": "any",
     "LoadPriority": 0,
     "AcceptsFeedback": true,
-    "LastUpdate": 0
+    "DownloadCount": 0,
+    "LastUpdate": 1784021519,
+    "Changelog": "## Questionable v15.306.0.8\n\nThis release was automatically created following a version bump.\n\n### Changes in this release\n- Feature: AutoHook presets can be embedded in quest paths now -alydev\n\n### Installation Files\n- `latest.zip` - **Plugin archive for installation**\n- `Questionable.json` - Plugin manifest\n- `*.sha256` - Checksums for verification\n"
   }
 ]
