@@ -22,8 +22,8 @@
     "ApplicableVersion": "any",
     "LoadPriority": 0,
     "AcceptsFeedback": true,
-    "DownloadCount": 5,
-    "LastUpdate": 1784026574,
+    "DownloadCount": 6,
+    "LastUpdate": 1784027292,
     "Changelog": "## Questionable v15.306.0.8.2\n\nThis release was automatically created following a version bump.\n\n### Changes in this release\n- Fix: use Chinese in-game aetheryte names for DailyRoutines teleport and fall back to Lifestream when BetterTeleport is unavailable.\n- Feature: add AEAssist combat support and DailyRoutines compatibility.\n- Feature: AutoHook presets can be embedded in quest paths now -alydev\n\n### Installation Files\n- `latest.zip` - **Plugin archive for installation**\n- `Questionable.json` - Plugin manifest\n- `*.sha256` - Checksums for verification\n"
   }
 ]
