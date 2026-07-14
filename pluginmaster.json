@@ -5,13 +5,13 @@
     "Punchline": "中文本地化的任务助手。",
     "Description": "Questionable 的中文本地化版本，帮助你自动完成支持的任务。",
     "InternalName": "Questionable",
-    "AssemblyVersion": "15.306.0.8",
-    "TestingAssemblyVersion": "15.306.0.8",
+    "AssemblyVersion": "15.306.0.9",
+    "TestingAssemblyVersion": "15.306.0.9",
     "DalamudApiLevel": 15,
     "TestingDalamudApiLevel": 15,
-    "DownloadLinkInstall": "https://github.com/hu1j1233/Questionable/releases/download/v15.306.0.8/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/hu1j1233/Questionable/releases/download/v15.306.0.8/latest.zip",
-    "DownloadLinkTesting": "https://github.com/hu1j1233/Questionable/releases/download/v15.306.0.8/latest.zip",
+    "DownloadLinkInstall": "https://github.com/hu1j1233/Questionable/releases/download/v15.306.0.8.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/hu1j1233/Questionable/releases/download/v15.306.0.8.1/latest.zip",
+    "DownloadLinkTesting": "https://github.com/hu1j1233/Questionable/releases/download/v15.306.0.8.1/latest.zip",
     "RepoUrl": "https://github.com/hu1j1233/Questionable",
     "IconUrl": "https://puni.sh/api/plugins/icon/94",
     "Tags": [
@@ -22,8 +22,8 @@
     "ApplicableVersion": "any",
     "LoadPriority": 0,
     "AcceptsFeedback": true,
-    "DownloadCount": 0,
-    "LastUpdate": 1784021519,
-    "Changelog": "## Questionable v15.306.0.8\n\nThis release was automatically created following a version bump.\n\n### Changes in this release\n- Feature: AutoHook presets can be embedded in quest paths now -alydev\n\n### Installation Files\n- `latest.zip` - **Plugin archive for installation**\n- `Questionable.json` - Plugin manifest\n- `*.sha256` - Checksums for verification\n"
+    "DownloadCount": 3,
+    "LastUpdate": 1784025059,
+    "Changelog": "## Questionable v15.306.0.8.1\n\nThis release was automatically created following a version bump.\n\n### Changes in this release\n- Feature: add AEAssist combat support and DailyRoutines compatibility.\n- Feature: AutoHook presets can be embedded in quest paths now -alydev\n\n### Installation Files\n- `latest.zip` - **Plugin archive for installation**\n- `Questionable.json` - Plugin manifest\n- `*.sha256` - Checksums for verification\n"
   }
 ]
